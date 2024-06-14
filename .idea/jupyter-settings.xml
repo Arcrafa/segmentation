@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JupyterPersistentConnectionParameters">
+    <option name="knownRemoteServers">
+      <list>
+        <JupyterConnectionParameters>
+          <option name="authType" value="notebook" />
+          <option name="token" value="a2d39a2a3ae71d8671f28db23084fa032f40cab930a452ff" />
+          <option name="urlString" value="http://127.0.0.1:8881" />
+          <authParams2>
+            <map>
+              <entry key="token" value="a2d39a2a3ae71d8671f28db23084fa032f40cab930a452ff" />
+            </map>
+          </authParams2>
+        </JupyterConnectionParameters>
+      </list>
+    </option>
+  </component>
+</project>
