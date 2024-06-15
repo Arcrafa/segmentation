@@ -1,0 +1,831 @@
+wcgpu06.fnal.gov
+GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-bbb41574-bf7b-19b0-80b2-1d057d6f5039)
+GPU 1: Tesla V100-PCIE-32GB (UUID: GPU-2716d6e5-0eb2-db13-f22a-5ecc2c36782f)
+/wclustre/nova/users/rafaelma2/venv385/bin/python
+/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/transformers/models/maskformer/image_processing_maskformer.py:419: FutureWarning: The `reduce_labels` argument is deprecated and will be removed in v4.27. Please use `do_reduce_labels` instead.
+  warnings.warn(
+/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at facebook/mask2former-swin-tiny-coco-instance were not used when initializing Mask2FormerForUniversalSegmentation: ['model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.output.dense.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.self.value.bias', 'model.pixel_level_module.decoder.encoder.layers.4.fc1.weight', 'model.transformer_module.decoder.layers.7.cross_attn.in_proj_weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.self.value.bias', 'model.transformer_module.decoder.layers.2.cross_attn.in_proj_weight', 'model.transformer_module.decoder.layers.4.cross_attn_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.self.key.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.intermediate.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.output.dense.weight', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn.sampling_offsets.weight', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn.sampling_offsets.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.output.dense.weight', 'model.transformer_module.decoder.layers.7.cross_attn.out_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.intermediate.dense.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn.output_proj.weight', 'model.transformer_module.decoder.layers.8.self_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.2.self_attn.k_proj.bias', 'model.transformer_module.decoder.layers.2.cross_attn.out_proj.weight', 'model.transformer_module.decoder.layers.4.self_attn.out_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.self.key.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.output.dense.bias', 'model.transformer_module.decoder.layers.2.fc1.bias', 'model.transformer_module.decoder.layers.5.self_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.7.self_attn.q_proj.bias', 'model.transformer_module.decoder.layers.2.self_attn.q_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.intermediate.dense.weight', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn.value_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.self.value.weight', 'model.pixel_level_module.decoder.encoder.layers.5.fc2.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.self.query.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.layernorm_before.bias', 'model.transformer_module.decoder.layers.7.self_attn.k_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.layernorm_before.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.output.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.layernorm_before.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.output.dense.bias', 'model.pixel_level_module.decoder.encoder.layers.5.fc1.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.output.dense.bias', 'model.transformer_module.decoder.layers.2.self_attn.q_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn.attention_weights.bias', 'model.transformer_module.decoder.layers.4.final_layer_norm.weight', 'model.transformer_module.decoder.layers.3.self_attn.k_proj.weight', 'model.transformer_module.decoder.layers.7.self_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.3.self_attn.q_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.5.fc2.bias', 'model.pixel_level_module.decoder.encoder.layers.2.fc2.bias', 'model.transformer_module.decoder.layers.7.self_attn.v_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.self.query.weight', 'model.transformer_module.decoder.layers.3.final_layer_norm.weight', 'model.pixel_level_module.decoder.encoder.layers.4.fc2.bias', 'model.transformer_module.decoder.layers.6.final_layer_norm.weight', 'model.pixel_level_module.decoder.encoder.layers.2.fc1.weight', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn.output_proj.weight', 'model.transformer_module.decoder.layers.8.self_attn.k_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.layernorm_after.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.layernorm_after.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.layernorm_after.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.self.value.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.intermediate.dense.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn.sampling_offsets.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.output.dense.weight', 'model.transformer_module.decoder.layers.5.fc2.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.self.key.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.7.self_attn.v_proj.weight', 'model.transformer_module.decoder.layers.5.cross_attn.out_proj.bias', 'model.transformer_module.decoder.layers.7.final_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.intermediate.dense.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.intermediate.dense.bias', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.self.query.bias', 'model.transformer_module.decoder.layers.6.cross_attn.in_proj_bias', 'model.transformer_module.decoder.layers.8.self_attn.k_proj.bias', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn.output_proj.bias', 'model.transformer_module.decoder.layers.5.self_attn.v_proj.bias', 'model.transformer_module.decoder.layers.5.cross_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.7.self_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.3.cross_attn.in_proj_bias', 'model.transformer_module.decoder.layers.3.self_attn.out_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.intermediate.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.self.value.bias', 'model.transformer_module.decoder.layers.4.cross_attn.out_proj.weight', 'model.transformer_module.decoder.layers.8.self_attn.out_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.intermediate.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.self.relative_position_bias_table', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.intermediate.dense.bias', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn.output_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.layernorm_before.bias', 'model.transformer_module.decoder.layers.2.fc2.bias', 'model.transformer_module.decoder.layers.2.fc1.weight', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.intermediate.dense.weight', 'model.transformer_module.decoder.layers.6.cross_attn.out_proj.bias', 'model.transformer_module.decoder.layers.5.fc1.weight', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn.value_proj.bias', 'model.transformer_module.decoder.layers.4.self_attn.q_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.layernorm_after.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.self.value.weight', 'model.transformer_module.decoder.layers.2.self_attn.out_proj.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn.attention_weights.bias', 'model.transformer_module.decoder.layers.7.self_attn.out_proj.bias', 'model.transformer_module.decoder.layers.8.cross_attn_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.layernorm_after.weight', 'model.transformer_module.decoder.layers.4.self_attn.v_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.output.dense.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.self.query.weight', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.layernorm_before.bias', 'model.transformer_module.decoder.layers.8.self_attn.out_proj.bias', 'model.transformer_module.decoder.layers.8.cross_attn.out_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.output.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.layernorm_before.bias', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.7.cross_attn.in_proj_bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.self.query.weight', 'model.transformer_module.decoder.layers.8.cross_attn.out_proj.weight', 'model.transformer_module.decoder.layers.6.self_attn.v_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.5.final_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.self.key.weight', 'model.transformer_module.decoder.layers.5.self_attn.out_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.self.value.weight', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn.sampling_offsets.bias', 'model.transformer_module.decoder.layers.5.cross_attn_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.intermediate.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.output.dense.bias', 'model.transformer_module.decoder.layers.4.fc2.bias', 'model.transformer_module.decoder.layers.8.self_attn.q_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn.attention_weights.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.self.query.weight', 'model.transformer_module.decoder.layers.4.self_attn.out_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.output.dense.bias', 'model.transformer_module.decoder.layers.2.cross_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.7.fc2.weight', 'model.pixel_level_module.decoder.encoder.layers.5.final_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.self.value.weight', 'model.transformer_module.decoder.layers.3.cross_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.8.cross_attn.in_proj_weight', 'model.transformer_module.decoder.layers.4.fc1.bias', 'model.transformer_module.decoder.layers.3.self_attn.q_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.layernorm_after.bias', 'model.transformer_module.decoder.layers.5.cross_attn.out_proj.weight', 'model.transformer_module.decoder.layers.6.fc2.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.layernorm_after.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn.attention_weights.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.self.relative_position_bias_table', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.self.query.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.self.relative_position_bias_table', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.self.relative_position_index', 'model.transformer_module.decoder.layers.8.self_attn.v_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.output.dense.weight', 'model.transformer_module.decoder.layers.6.fc1.weight', 'model.transformer_module.decoder.layers.3.fc1.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.self.key.bias', 'model.transformer_module.decoder.layers.3.self_attn.v_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.layernorm_before.weight', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.intermediate.dense.bias', 'model.transformer_module.decoder.layers.4.self_attn.k_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.output.dense.weight', 'model.transformer_module.decoder.layers.4.cross_attn.out_proj.bias', 'model.transformer_module.decoder.layers.6.self_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.4.cross_attn.in_proj_bias', 'model.transformer_module.decoder.layers.6.self_attn.v_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.self.key.bias', 'model.transformer_module.decoder.layers.3.cross_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.4.self_attn.q_proj.weight', 'model.transformer_module.decoder.layers.4.final_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.self.value.bias', 'model.transformer_module.decoder.layers.4.self_attn.k_proj.weight', 'model.transformer_module.decoder.layers.7.fc2.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.self.relative_position_index', 'model.transformer_module.decoder.layers.5.cross_attn.in_proj_weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.self.value.bias', 'model.pixel_level_module.decoder.encoder.layers.2.final_layer_norm.bias', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn.output_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.self.relative_position_bias_table', 'model.transformer_module.decoder.layers.7.fc1.weight', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.self.key.weight', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn.value_proj.weight', 'model.transformer_module.decoder.layers.3.cross_attn.in_proj_weight', 'model.transformer_module.decoder.layers.5.self_attn.out_proj.weight', 'model.transformer_module.decoder.layers.2.cross_attn.in_proj_bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.intermediate.dense.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.self.query.bias', 'model.transformer_module.decoder.layers.6.cross_attn.out_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.3.fc2.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.self.query.bias', 'model.pixel_level_module.decoder.encoder.layers.2.fc1.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.layernorm_after.bias', 'model.pixel_level_module.decoder.encoder.layers.3.fc2.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.output.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.self.relative_position_index', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.self.query.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.output.dense.weight', 'model.transformer_module.decoder.layers.5.fc1.bias', 'model.transformer_module.decoder.layers.8.final_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.self.key.weight', 'model.transformer_module.decoder.layers.3.self_attn.out_proj.bias', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn.sampling_offsets.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.layernorm_before.bias', 'model.transformer_module.decoder.layers.2.final_layer_norm.bias', 'model.transformer_module.decoder.layers.8.cross_attn.in_proj_bias', 'model.transformer_module.decoder.layers.5.final_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.self.value.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.self.key.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.output.dense.bias', 'model.transformer_module.decoder.layers.6.cross_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.6.cross_attn_layer_norm.weight', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn.value_proj.weight', 'model.transformer_module.decoder.layers.6.fc1.bias', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn.value_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.output.dense.bias', 'model.transformer_module.decoder.layers.2.self_attn.out_proj.weight', 'model.transformer_module.decoder.layers.8.cross_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.4.self_attn.v_proj.bias', 'model.transformer_module.decoder.layers.2.self_attn.v_proj.bias', 'model.transformer_module.decoder.layers.6.self_attn.out_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.layernorm_before.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.self.query.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.self.relative_position_index', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn.attention_weights.bias', 'model.transformer_module.decoder.layers.5.self_attn.k_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.output.dense.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn_layer_norm.bias', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn.sampling_offsets.bias', 'model.transformer_module.decoder.layers.7.self_attn.out_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn.attention_weights.weight', 'model.transformer_module.decoder.layers.5.self_attn.q_proj.bias', 'model.pixel_level_module.decoder.encoder.layers.4.final_layer_norm.weight', 'model.transformer_module.decoder.layers.7.cross_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.7.self_attn.k_proj.weight', 'model.transformer_module.decoder.layers.7.self_attn.q_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.layernorm_after.weight', 'model.transformer_module.decoder.layers.8.self_attn_layer_norm.bias', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.layernorm_before.bias', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.layernorm_after.bias', 'model.transformer_module.decoder.layers.8.fc1.weight', 'model.transformer_module.decoder.layers.8.fc2.weight', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn.value_proj.bias', 'model.pixel_level_module.decoder.encoder.layers.3.final_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.intermediate.dense.bias', 'model.transformer_module.decoder.layers.3.cross_attn.out_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.layernorm_after.weight', 'model.transformer_module.decoder.layers.5.self_attn_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.output.dense.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn.value_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.output.dense.bias', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.layernorm_before.weight', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.layernorm_after.bias', 'model.transformer_module.decoder.layers.3.self_attn_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.layernorm_after.weight', 'model.pixel_level_module.decoder.encoder.layers.4.fc2.weight', 'model.transformer_module.decoder.layers.3.fc2.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.self.query.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.output.dense.bias', 'model.transformer_module.decoder.layers.6.self_attn.out_proj.bias', 'model.pixel_level_module.decoder.encoder.layers.3.final_layer_norm.weight', 'model.transformer_module.decoder.layers.5.fc2.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.self.relative_position_bias_table', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.self.query.weight', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.self.value.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.output.dense.weight', 'model.transformer_module.decoder.layers.3.cross_attn.out_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.layernorm_before.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.self.value.weight', 'model.transformer_module.decoder.layers.8.fc1.bias', 'model.pixel_level_module.decoder.encoder.layers.2.final_layer_norm.weight', 'model.transformer_module.decoder.layers.6.self_attn.q_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.self.value.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.layernorm_before.weight', 'model.transformer_module.decoder.layers.5.self_attn.k_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.3.fc1.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.self.key.bias', 'model.transformer_module.decoder.layers.2.self_attn_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.self.relative_position_index', 'model.transformer_module.decoder.layers.2.cross_attn.out_proj.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn.output_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.output.dense.bias', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn.value_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.self.relative_position_bias_table', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.layernorm_after.bias', 'model.transformer_module.decoder.layers.4.self_attn_layer_norm.weight', 'model.pixel_level_module.decoder.encoder.layers.4.fc1.bias', 'model.transformer_module.decoder.layers.3.self_attn.v_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.self.relative_position_index', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.attention.self.key.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.intermediate.dense.weight', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn.attention_weights.bias', 'model.transformer_module.decoder.layers.7.fc1.bias', 'model.transformer_module.decoder.layers.6.self_attn.k_proj.weight', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn.attention_weights.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.self.relative_position_index', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.self.query.bias', 'model.pixel_level_module.decoder.encoder.layers.3.fc1.bias', 'model.transformer_module.decoder.layers.6.fc2.weight', 'model.transformer_module.decoder.layers.7.cross_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.7.cross_attn.out_proj.weight', 'model.transformer_module.decoder.layers.4.cross_attn.in_proj_weight', 'model.transformer_module.decoder.layers.8.final_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.intermediate.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.output.dense.weight', 'model.pixel_level_module.decoder.encoder.layers.3.self_attn.output_proj.weight', 'model.transformer_module.decoder.layers.7.final_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.layernorm_after.weight', 'model.pixel_level_module.decoder.encoder.layers.2.fc2.weight', 'model.transformer_module.decoder.layers.6.self_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.3.self_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.8.self_attn.q_proj.bias', 'model.transformer_module.decoder.layers.8.fc2.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.attention.output.dense.weight', 'model.transformer_module.decoder.layers.2.final_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.output.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.self.key.weight', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn_layer_norm.weight', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn.sampling_offsets.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.self.key.weight', 'model.pixel_level_module.decoder.encoder.layers.5.fc1.bias', 'model.pixel_level_module.decoder.encoder.layers.5.self_attn.output_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.self.key.bias', 'model.transformer_module.decoder.layers.2.self_attn.v_proj.weight', 'model.transformer_module.decoder.layers.4.fc1.weight', 'model.transformer_module.decoder.layers.2.self_attn_layer_norm.weight', 'model.transformer_module.decoder.layers.3.final_layer_norm.bias', 'model.transformer_module.decoder.layers.6.final_layer_norm.bias', 'model.pixel_level_module.decoder.encoder.layers.4.self_attn.sampling_offsets.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.self.relative_position_index', 'model.transformer_module.decoder.layers.3.fc2.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.self.value.weight', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.layernorm_before.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.attention.self.value.bias', 'model.transformer_module.decoder.layers.8.self_attn.v_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.5.layernorm_after.bias', 'model.pixel_level_module.decoder.encoder.layers.2.self_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.2.fc2.weight', 'model.transformer_module.decoder.layers.2.self_attn.k_proj.weight', 'model.transformer_module.decoder.layers.5.self_attn.q_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.3.layernorm_before.weight', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.self.query.weight', 'model.transformer_module.decoder.layers.3.fc1.bias', 'model.pixel_level_module.encoder.encoder.layers.0.blocks.1.attention.self.query.bias', 'model.transformer_module.decoder.layers.4.self_attn_layer_norm.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.output.dense.weight', 'model.transformer_module.decoder.layers.6.self_attn.k_proj.bias', 'model.transformer_module.decoder.layers.4.fc2.weight', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.self.relative_position_bias_table', 'model.transformer_module.decoder.layers.5.final_layer_norm.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.output.dense.weight', 'model.transformer_module.decoder.layers.6.self_attn.q_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.2.layernorm_before.weight', 'model.transformer_module.decoder.layers.5.self_attn.v_proj.weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.self.key.bias', 'model.transformer_module.decoder.layers.4.cross_attn_layer_norm.bias', 'model.transformer_module.decoder.layers.3.self_attn.k_proj.bias', 'model.pixel_level_module.encoder.encoder.layers.1.blocks.1.attention.output.dense.bias', 'model.transformer_module.decoder.layers.5.cross_attn.in_proj_bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.output.dense.bias', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.4.attention.output.dense.weight', 'model.pixel_level_module.encoder.encoder.layers.2.blocks.1.attention.self.key.weight', 'model.transformer_module.decoder.layers.6.cross_attn.in_proj_weight', 'model.pixel_level_module.encoder.encoder.layers.3.blocks.1.attention.self.relative_position_bias_table', 'model.pixel_level_module.decoder.encoder.layers.4.final_layer_norm.bias', 'model.transformer_module.decoder.layers.2.cross_attn_layer_norm.weight']
+- This IS expected if you are initializing Mask2FormerForUniversalSegmentation from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Mask2FormerForUniversalSegmentation from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Mask2FormerForUniversalSegmentation were not initialized from the model checkpoint at facebook/mask2former-swin-tiny-coco-instance and are newly initialized because the shapes did not match:
+- model.transformer_module.queries_embedder.weight: found shape torch.Size([100, 256]) in the checkpoint and torch.Size([30, 256]) in the model instantiated
+- model.transformer_module.queries_features.weight: found shape torch.Size([100, 256]) in the checkpoint and torch.Size([30, 256]) in the model instantiated
+- class_predictor.weight: found shape torch.Size([81, 256]) in the checkpoint and torch.Size([6, 256]) in the model instantiated
+- class_predictor.bias: found shape torch.Size([81]) in the checkpoint and torch.Size([6]) in the model instantiated
+- criterion.empty_weight: found shape torch.Size([81]) in the checkpoint and torch.Size([6]) in the model instantiated
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+Loaded 118 images.
+118
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:01<00:00,  1.95s/it]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:01<00:00,  1.95s/it]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 38.75it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 38.24it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 39.44it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 38.91it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 38.46it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 37.97it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 40.28it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 39.77it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 40.77it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 40.25it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 39.50it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 38.99it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 39.05it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 38.55it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 36.59it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 36.13it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  1 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 38.15it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 37.67it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 17.21it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 17.10it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.85it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.67it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 22.08it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.90it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 18.32it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 18.18it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.73it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.55it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 18.51it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 18.39it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 22.30it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 22.12it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.92it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.75it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 22.04it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.86it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  11 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.73it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 21.56it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.02it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 10.98it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.53it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.45it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.82it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.74it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.59it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.52it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.52it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.45it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.91it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.83it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 12.76it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 12.70it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 12.58it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 12.52it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.86it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.78it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  21 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.47it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 14.40it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 10.49it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 10.45it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  9.51it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  9.47it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  9.67it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  9.63it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.18it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.14it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.19it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.15it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.10it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.05it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.25it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.20it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.30it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.26it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.12it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 11.07it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  32 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 10.91it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00, 10.85it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.27it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.24it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.70it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.67it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.56it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.53it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.70it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.66it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.53it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.51it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.77it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.74it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.80it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.76it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.58it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.55it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.60it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.57it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  42 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.65it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  8.62it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.88it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.86it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.03it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.01it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.13it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.11it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.11it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.09it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.00it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.98it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.09it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.07it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.13it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.11it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.15it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.13it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.11it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  7.09it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  53 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.14it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.12it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.90it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.89it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.99it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.98it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.14it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.13it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.29it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.28it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.04it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.03it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.27it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.26it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.13it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.11it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.09it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.08it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.08it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.07it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  63 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.07it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  6.05it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.11it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.10it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.33it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.32it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.32it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.30it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.57it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.55it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.29it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.28it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.55it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.54it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.57it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.56it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.33it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.32it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.30it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.28it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  74 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.35it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  5.34it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.60it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.60it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.74it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.73it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.72it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.71it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.14it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.13it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.75it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.74it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.74it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.73it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.13it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.13it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.75it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.75it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.76it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.75it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  84 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.77it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.76it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.12it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.12it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.20it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.19it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.20it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.19it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.18it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.17it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.65it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.64it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.13it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.12it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.22it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.21it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.20it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.19it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.20it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.19it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  95 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.19it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  4.18it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.73it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.72it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.26it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.25it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.29it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.28it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.28it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.27it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.80it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.80it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.81it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.80it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.29it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.29it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.28it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.28it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.77it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.76it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  105 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.78it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.78it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.97it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.97it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.01it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.01it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.02it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.01it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.49it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.49it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.45it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.45it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.99it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.98it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.01it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.01it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.01it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.01it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.99it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.98it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  116 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.46it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.45it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.17it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.16it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.22it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.21it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.22it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.21it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.25it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.24it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.79it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.79it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.23it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.22it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.24it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.23it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.24it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.23it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.20it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.20it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  126 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.21it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  3.21it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.89it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.89it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.92it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.92it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.52it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.52it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.91it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.90it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.52it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.51it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.92it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.91it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.52it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.51it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.55it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.54it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.93it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.93it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  137 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.95it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.95it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.37it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.37it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.74it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.74it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.40it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.39it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.75it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.75it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.77it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.77it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.76it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.76it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.39it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.39it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.77it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.77it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.74it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.74it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  147 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.75it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.75it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.23it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.23it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.58it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.58it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.57it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.57it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.59it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.58it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.60it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.60it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.59it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.58it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.24it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.24it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.57it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.57it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.57it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.57it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  158 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.57it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.56it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.41it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.40it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.10it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.10it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.42it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.11it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.11it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.42it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.42it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  168 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.44it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.44it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.94it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.94it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.27it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.27it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.24it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.24it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.96it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.96it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.27it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.27it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.26it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.26it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.96it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.96it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.26it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.26it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.26it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.26it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  179 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.27it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.27it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.13it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.12it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.16it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.16it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.16it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.16it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.16it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.15it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.17it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.17it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.88it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.88it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.86it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.86it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.09it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.09it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.87it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.87it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  189 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.17it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.16it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.02it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.02it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.78it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.78it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.05it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.05it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.05it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.04it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.03it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.03it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.03it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.03it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.05it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.05it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.76it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  1.76it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.05it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.05it/s]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+SLURM auto-requeueing enabled. Setting signal handlers.
+
+N:  200 / 118
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|                                                          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|                                             | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.04it/s]Predicting DataLoader 0: 100%|█████████████████████████████████████| 1/1 [00:00<00:00,  2.03it/s]
+Linearithmic: time = 11 + 0.012*n*log(n) (sec)

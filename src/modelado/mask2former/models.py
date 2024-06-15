@@ -26,6 +26,7 @@ class Mask2FormerNova(pl.LightningModule):
         configuration.decoder_layers = 3
         configuration.num_hidden_layers = 3
         model_path = "/wclustre/nova/users/rafaelma2/NOvA-Clean/modelos/m2fpre"
+        model_path = "facebook/mask2former-swin-tiny-coco-instance"
         self.model = Mask2FormerForUniversalSegmentation.from_pretrained(
             model_path,
             ignore_mismatched_sizes=True,
@@ -47,6 +48,12 @@ class Mask2FormerNova(pl.LightningModule):
         loss = outputs.loss
         self.log("val_loss", loss)
         return loss
+    def predict_step(self, batch, batch_idx):
+        # enable Monte Carlo Dropout
+        
+        pred = self.model(pixel_values=batch["pixel_values"], mask_labels=batch["mask_labels"],
+                             class_labels=batch["class_labels"])
+        return pred
 
     def configure_optimizers(self):
         optimizer = Adam(self.model.parameters(), lr=self.lr)
