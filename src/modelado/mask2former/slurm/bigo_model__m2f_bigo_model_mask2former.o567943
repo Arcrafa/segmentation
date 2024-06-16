@@ -1,0 +1,31 @@
+wcgpu06.fnal.gov
+GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-bbb41574-bf7b-19b0-80b2-1d057d6f5039)
+/wclustre/nova/users/rafaelma2/venv385/bin/python
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Traceback (most recent call last):
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 1351, in <module>
+    exec_with_profiler(script_filename, prof, args.backend, script_args)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 1252, in exec_with_profiler
+    exec(compile(f.read(), filename, 'exec'), ns, ns)
+  File "bigo.py", line 39, in <module>
+    best, others = big_o.big_o(predict, positive_int_generator, n_repeats=10,min_n=1,max_n=500, n_measures=20)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/big_o/big_o.py", line 166, in big_o
+    ns, time = measure_execution_time(func, data_generator,
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/big_o/big_o.py", line 59, in measure_execution_time
+    timer = Timer(func_wrapper(n))
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/big_o/big_o.py", line 50, in __init__
+    self.data = data_generator(n)
+  File "bigo.py", line 38, in <lambda>
+    positive_int_generator = lambda n: big_o.datagen.integers(n, 0, len_dataset-1)
+NameError: name 'len_dataset' is not defined
+mprof: Sampling memory every 0.1s
+running new process
+running as a Python program...
+Using last profile data.

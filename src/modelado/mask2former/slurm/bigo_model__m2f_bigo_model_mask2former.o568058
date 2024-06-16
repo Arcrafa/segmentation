@@ -1,0 +1,100 @@
+wcgpu06.fnal.gov
+GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-bbb41574-bf7b-19b0-80b2-1d057d6f5039)
+/wclustre/nova/users/rafaelma2/venv385/bin/python
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/transformers/models/maskformer/image_processing_maskformer.py:419: FutureWarning: The `reduce_labels` argument is deprecated and will be removed in v4.27. Please use `do_reduce_labels` instead.
+  warnings.warn(
+/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    self._prepare_proxy(conn)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1012, in _prepare_proxy
+    conn.connect()
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/urllib3/connection.py", line 374, in connect
+    self._tunnel()
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/http/client.py", line 900, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/urllib3/connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/mask2former-swin-tiny-coco-instance/resolve/main/pytorch_model.bin (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 1351, in <module>
+    exec_with_profiler(script_filename, prof, args.backend, script_args)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 1252, in exec_with_profiler
+    exec(compile(f.read(), filename, 'exec'), ns, ns)
+  File "bigo.py", line 39, in <module>
+    load_model()
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 609, in f
+    with self.call_on_stack(func, *args, **kwds) as result:
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 624, in call_on_stack
+    yield func(*args, **kwds)
+  File "bigo.py", line 27, in load_model
+    model = Mask2FormerNova.load_from_checkpoint(ckpt_path)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/pytorch_lightning/core/module.py", line 1531, in load_from_checkpoint
+    loaded = _load_from_checkpoint(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/pytorch_lightning/core/saving.py", line 90, in _load_from_checkpoint
+    return _load_state(cls, checkpoint, strict=strict, **kwargs)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/pytorch_lightning/core/saving.py", line 136, in _load_state
+    obj = cls(**_cls_kwargs)
+  File "/wclustre/nova/users/rafaelma2/segmentation/src/modelado/mask2former/models.py", line 30, in __init__
+    self.model = Mask2FormerForUniversalSegmentation.from_pretrained(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/transformers/modeling_utils.py", line 2450, in from_pretrained
+    resolved_archive_file = cached_file(pretrained_model_name_or_path, filename, **cached_file_kwargs)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/transformers/utils/hub.py", line 409, in cached_file
+    resolved_file = hf_hub_download(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1221, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1282, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, head_call_error) = _get_metadata_or_catch_error(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1722, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(url=url, proxies=proxies, timeout=etag_timeout, headers=headers)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1645, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 372, in _request_wrapper
+    response = _request_wrapper(
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 395, in _request_wrapper
+    response = get_session().request(method=method, url=url, **params)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/huggingface_hub/utils/_http.py", line 66, in send
+    return super().send(request, *args, **kwargs)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/requests/adapters.py", line 694, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/mask2former-swin-tiny-coco-instance/resolve/main/pytorch_model.bin (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out')))"), '(Request ID: 9cb95f08-6fda-423d-9736-e5039f6e635b)')
+Loaded 118 images.
+mprof: Sampling memory every 0.1s
+running new process
+running as a Python program...
+Using last profile data.

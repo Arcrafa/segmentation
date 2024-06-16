@@ -1,0 +1,11 @@
+wcgpu06.fnal.gov
+GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-2716d6e5-0eb2-db13-f22a-5ecc2c36782f)
+/wclustre/nova/users/rafaelma2/venv385/bin/python
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Traceback (most recent call last):
+  File "bigo.py", line 32, in <module>
+    @profile
+NameError: name 'profile' is not defined

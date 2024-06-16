@@ -1,0 +1,44 @@
+wcgpu06.fnal.gov
+GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-bbb41574-bf7b-19b0-80b2-1d057d6f5039)
+/wclustre/nova/users/rafaelma2/venv385/bin/python
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Traceback (most recent call last):
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 1351, in <module>
+    exec_with_profiler(script_filename, prof, args.backend, script_args)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 1252, in exec_with_profiler
+    exec(compile(f.read(), filename, 'exec'), ns, ns)
+  File "bigo.py", line 39, in <module>
+    best, others = big_o.big_o(predict, positive_int_generator, n_repeats=10,min_n=1,max_n=500, n_measures=20)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/big_o/big_o.py", line 166, in big_o
+    ns, time = measure_execution_time(func, data_generator,
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/big_o/big_o.py", line 60, in measure_execution_time
+    measurements = timer.repeat(n_timings, n_repeats)
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/timeit.py", line 205, in repeat
+    t = self.timeit(number)
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/timeit.py", line 177, in timeit
+    timing = self.inner(it, self.timer)
+  File "<timeit-src>", line 6, in inner
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/big_o/big_o.py", line 53, in __call__
+    return func(self.data)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 609, in f
+    with self.call_on_stack(func, *args, **kwds) as result:
+  File "/work1/nova/grohmc/conda/envs/nascvn/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/memory_profiler.py", line 624, in call_on_stack
+    yield func(*args, **kwds)
+  File "bigo.py", line 36, in predict
+    predictions = trainer.predict(model, dataloader, return_predictions=False)
+  File "/wclustre/nova/users/rafaelma2/venv385/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 799, in predict
+    raise TypeError(
+TypeError: `Trainer.predict()` requires a `LightningModule` when it hasn't been passed in a previous run
+mprof: Sampling memory every 0.1s
+running new process
+running as a Python program...
+Using last profile data.

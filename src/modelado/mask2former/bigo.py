@@ -33,9 +33,6 @@ def predict(indices):
     predictions = trainer.predict(model, dataloader, return_predictions=False)
 
 positive_int_generator = lambda n: big_o.datagen.integers(n, 0, len_dataset-1)
-best, others = big_o.big_o(predict, positive_int_generator, n_repeats=10,min_n=1,max_n=200, n_measures=20)
+best, others = big_o.big_o(predict, positive_int_generator, n_repeats=10,min_n=1,max_n=500, n_measures=20)
 
 print(best)
-
-
-

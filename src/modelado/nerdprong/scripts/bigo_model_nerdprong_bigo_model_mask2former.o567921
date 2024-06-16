@@ -1,0 +1,63 @@
+wcgpu06.fnal.gov
+GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-bbb41574-bf7b-19b0-80b2-1d057d6f5039)
+/work1/nova/achriste/conda/mlinstseg/bin/python
+Using TensorFlow backend.
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:1919: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:2018: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+WARNING:tensorflow:From /wclustre/nova/users/rafaelma2/segmentation/src/modelado/nerdprong/mrcnn/model.py:620: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /wclustre/nova/users/rafaelma2/segmentation/src/modelado/nerdprong/mrcnn/model.py:678: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /wclustre/nova/users/rafaelma2/segmentation/src/modelado/nerdprong/mrcnn/model.py:702: calling crop_and_resize_v1 (from tensorflow.python.ops.image_ops_impl) with box_ind is deprecated and will be removed in a future version.
+Instructions for updating:
+box_ind is deprecated, use box_indices instead
+WARNING:tensorflow:From /wclustre/nova/users/rafaelma2/segmentation/src/modelado/nerdprong/mrcnn/model.py:1049: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2024-06-15 20:41:00.917092: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2024-06-15 20:41:00.941178: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2500000000 Hz
+2024-06-15 20:41:00.943514: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ead8ed1e00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-06-15 20:41:00.943554: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-06-15 20:41:00.947171: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2024-06-15 20:41:01.210852: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ead8f51290 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-06-15 20:41:01.210981: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-PCIE-32GB, Compute Capability 7.0
+2024-06-15 20:41:01.211434: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-PCIE-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.38
+pciBusID: 0000:5e:00.0
+2024-06-15 20:41:01.212962: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2024-06-15 20:41:01.226253: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2024-06-15 20:41:01.233662: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2024-06-15 20:41:01.236490: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2024-06-15 20:41:01.252190: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2024-06-15 20:41:01.262277: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2024-06-15 20:41:01.288957: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2024-06-15 20:41:01.289372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2024-06-15 20:41:01.289633: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2024-06-15 20:41:01.290069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-06-15 20:41:01.290095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2024-06-15 20:41:01.290106: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2024-06-15 20:41:01.290708: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30581 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-32GB, pci bus id: 0000:5e:00.0, compute capability: 7.0)
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /work1/nova/achriste/conda/mlinstseg/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+slurmstepd: error: *** JOB 567921 ON wcgpu06 CANCELLED AT 2024-06-15T21:24:41 ***

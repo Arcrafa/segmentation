@@ -6,12 +6,12 @@
 #SBATCH --partition=wc_gpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --gres=gpu:v100:2
+#SBATCH --gres=gpu:v100:1
 #SBATCH --cpus-per-gpu=20
 #SBATCH --mem-per-gpu=92G
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=maldonadoagudelorafael@gmail.com
-#SBATCH --output=train_model_m2f_%x.o%A
+#SBATCH --output=bigo_model__m2f_%x.o%A
 #SBATCH --no-requeue
 
 
@@ -37,5 +37,4 @@ export http_proxy=http://squid.fnal.gov:3128
 cd /wclustre/nova/users/rafaelma2/segmentation/src/modelado/mask2former
 
 python bigo.py
-
 
